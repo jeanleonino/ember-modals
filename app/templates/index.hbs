@@ -1,4 +1,7 @@
-<button {{action "toggleModal"}}>Toggle Modal</button>
+<div>
+  <p> Show simple example modal. </p>
+  <button {{action "toggleModal"}}>Toggle Modal</button>
+</div>
 
 {{#if isShowingModal}}
   {{#modal-dialog close="toggleModal"
@@ -7,3 +10,34 @@
     Oh hai there!
   {{/modal-dialog}}
 {{/if}}
+
+<hr>
+
+<div>
+  <p> Show simple example modal. </p>
+  <button {{action "toggleModal"}}>Toggle Modal</button>
+</div>
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Oh hai there!
+  {{/modal-dialog}}
+{{/if}}
+
+<hr>
+
+<div>
+  <p> Show simple example modal. </p>
+  <button {{action "toggleModal"}}>Toggle Modal</button>
+</div>
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Oh hai there!
+  {{/modal-dialog}}
+{{/if}}
+

@@ -1,0 +1,168 @@
+html {
+    /* 1 */
+    font: $base-body-font-weight $base-body-font-size $base-body-line-height $base-body-font-family;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    /* 3 */
+    background: $base-body-background;
+    color: $base-body-color;
+}
+
+/*
+ * Removes default margin.
+ */
+
+body { margin: 0; }
+
+/* Links
+ ========================================================================== */
+
+/*
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a { background: transparent; }
+
+/*
+ * Improve readability of focused elements when they are also in an active/hover state.
+ */
+
+a:active,
+a:hover { outline: 0; }
+
+/*
+ * Style
+ */
+
+a,
+.uk-link {
+    color: $base-link-color;
+    text-decoration: $base-link-text-decoration;
+    cursor: pointer;
+}
+
+a:hover {
+    color: $base-link-hover-color;
+    text-decoration: $base-link-hover-text-decoration;
+}
+
+/*
+ * 1. Address odd `em`-unit font size rendering in all browsers.
+ * 2. Consolas has a better baseline in running text compared to `Courier`
+ */
+
+code {
+    /* 1 */
+    font-size: $base-code-font-size;
+    /* 2 */
+    font-family: $base-code-font-family;
+    color: $base-code-color;
+    white-space: nowrap;
+}
+
+small { font-size: 80%; }
+
+/*
+ * Margins
+ */
+
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+address,
+fieldset,
+figure { margin: 0 0 $base-margin-vertical 0; }
+
+/* Headings
+ ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 $base-margin-vertical 0;
+    font-family:  $base-heading-font-family;
+    font-weight: $base-heading-font-weight;
+    color: $base-heading-color;
+    text-transform: $base-heading-text-transform;
+}
+
+/*
+ * Margins
+ */
+
+h1, h2, h3, h4, h5, h6 { margin-top: $base-heading-margin-top; }
+
+/*
+ * Sizes
+ */
+
+h1, {
+    font-size: $base-h1-font-size;
+    line-height: $base-h1-line-height;
+}
+
+h2, {
+    font-size: $base-h2-font-size;
+    line-height: $base-h2-line-height;
+}
+
+h3, {
+    font-size: $base-h3-font-size;
+    line-height: $base-h3-line-height;
+}
+
+h4, {
+    font-size: $base-h4-font-size;
+    line-height: $base-h4-line-height;
+}
+
+h5, {
+    font-size: $base-h5-font-size;
+    line-height: $base-h5-line-height;
+}
+
+h6, {
+    font-size: $base-h6-font-size;
+    line-height: $base-h6-line-height;
+}
+
+/* Horizontal rules
+ ========================================================================== */
+
+/*
+ * 1. Address differences between Firefox and other browsers.
+ * 2. Style
+ */
+
+hr {
+    /* 1 */
+    box-sizing: content-box;
+    height: 0;
+    /* 2 */
+    margin: $base-hr-margin-vertical 0;
+    border: 0;
+    border-top: $base-hr-border-width solid $base-hr-border;
+}
+
+/* HTML5 elements
+ ========================================================================== */
+
+/*
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary { display: block; }
