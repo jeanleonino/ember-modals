@@ -1,47 +1,54 @@
-<div>
-  <p>Show simple example modal.</p>
-  <button {{action "toggleModal"}}>Toggle Modal</button>
+<div class="uk-grid">
+  <div class="uk-width-1-2">
+    <div class="uk-panel uk-panel-box">
+      <p>Show simple example modal.</p>
+      <button class="uk-button uk-button-mini uk-button-success" {{action "toggleModal"}}>Toggle Modal</button>
+    </div>
+
+    {{#if isShowingModal}}
+      {{#modal-dialog close="toggleModal"
+                      targetAttachment="center"
+                      translucentOverlay=true}}
+        Oh hai there!
+      {{/modal-dialog}}
+    {{/if}}
+
+    <hr>
+
+    <div class="uk-panel uk-panel-box">
+      <p>Basic modal.</p>
+      <button class="uk-button uk-button-mini uk-button-success" {{action "toggleBasic"}}>Toggle Modal</button>
+    </div>
+
+    {{#if isShowingBasic}}
+      {{#modal-dialog close="toggleBasic"
+                      targetAttachment="center"
+                      translucentOverlay=true}}
+        <h1>Super cute modal here</h1>
+        <p>Oh hai there!</p>
+        <button {{action 'toggleBasic'}}>Close</button>
+      {{/modal-dialog}}
+    {{/if}}
+
+    <hr>
+
+    <div class="uk-panel uk-panel-box">
+      <p>Modal without translucent background.</p>
+      <button class="uk-button uk-button-mini uk-button-success" {{action "toggleNotTranslucent"}}>Toggle Modal</button>
+    </div>
+
+    {{#if isShowingNotTranslucent}}
+      {{#modal-dialog close="toggleNotTranslucent"
+                      targetAttachment="center"
+                      translucentOverlay=false}}
+        <h2>Modal here</h2>
+        <p>Oh hai there!</p>
+        <button {{action 'toggleNotTranslucent'}}>Close</button>
+      {{/modal-dialog}}
+    {{/if}}
+  </div>
+
+  <div class="uk-width-1-2">
+    <p>Here some informations about this tiny little project.</p>
+  </div>
 </div>
-
-{{#if isShowingModal}}
-  {{#modal-dialog close="toggleModal"
-                  targetAttachment="center"
-                  translucentOverlay=true}}
-    Oh hai there!
-  {{/modal-dialog}}
-{{/if}}
-
-<hr>
-
-<div>
-  <p>Basic modal.</p>
-  <button {{action "toggleBasic"}}>Toggle Modal</button>
-</div>
-
-{{#if isShowingBasic}}
-  {{#modal-dialog close="toggleBasic"
-                  targetAttachment="center"
-                  translucentOverlay=true}}
-    <h1>Super cute modal here</h1>
-    <p>Oh hai there!</p>
-    <button {{action 'toggleBasic'}}>Close</button>
-  {{/modal-dialog}}
-{{/if}}
-
-<hr>
-
-<div>
-  <p>Modal without translucent background.</p>
-  <button {{action "toggleNotTranslucent"}}>Toggle Modal</button>
-</div>
-
-{{#if isShowingNotTranslucent}}
-  {{#modal-dialog close="toggleNotTranslucent"
-                  targetAttachment="center"
-                  translucentOverlay=false}}
-    <h2>Modal here</h2>
-    <p>Oh hai there!</p>
-    <button {{action 'toggleNotTranslucent'}}>Close</button>
-  {{/modal-dialog}}
-{{/if}}
-

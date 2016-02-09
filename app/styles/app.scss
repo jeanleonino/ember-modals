@@ -1,11 +1,9 @@
+@import "bower_components/uikit/scss/uikit-mixins.scss";
+@import "bower_components/uikit/scss/uikit.scss";
+@import "bower_components/uikit/scss/components/autocomplete.scss";
+
 @import "ember-modal-dialog/ember-modal-structure";
 @import "ember-modal-dialog/ember-modal-appearance";
 
 @import "variables.scss";
 @import "base.scss";
-
-.container {
-  margin: 20px 20px 20px 20px;
-  padding: 12px 12px 12px 12px;
-  background-color: $container-background;
-}
